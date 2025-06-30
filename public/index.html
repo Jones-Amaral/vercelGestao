@@ -140,7 +140,7 @@
   <script>
     window.onload = () => {
 
-      fetch("http://localhost:3000/educacao")
+      fetch(`${API_BASE}/educacao`)
         .then(res => res.json())
         .then(data => {
           const educacao = document.getElementById("educacao")
@@ -175,7 +175,7 @@
         }).catch(err => console.error(err));
 
 
-      fetch("http://localhost:3000/noticias")
+      fetch(`${API_BASE}/noticias`)
         .then(res => res.json())
         .then(data => {
           const noticia = document.getElementById("noticias");
@@ -205,7 +205,7 @@
         .catch(err => console.error(err));
 
 
-      fetch("http://localhost:3000/investimento")
+      fetch(`${API_BASE}/investimento`)
         .then(res => res.json())
         .then(data => {
           const investimento = document.getElementById("investimentos")
